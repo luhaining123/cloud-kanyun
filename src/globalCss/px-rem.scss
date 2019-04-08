@@ -1,0 +1,4 @@
+$rem: 1rem;
+@function px2-rem($n){
+  @return 10/750*$n*$rem
+};
