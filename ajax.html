@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" id="form">
+  <input type="file" id="input">
+</form>
+<img src="" alt="" id="img">
+</body>
+<script src="./axios.js"></script>
+<script>
+  var form = document.querySelector("#form");
+  var input = document.querySelector("#input");
+  var img = document.querySelector("#img");
+  var token = ''
+  axios.get('http://upload.yaojunrong.com/getToken').then(res=>{
+    token = res.data.data;
+    console.log(token);
+  })
+
+  input.onchange = function(event){
+     const file = event.target.files[0]
+     const form = new FormData()
+    form.append('file',file)
+    form.append('token',token)
+    axios.post('https://upload-z1.qiniup.com',form).then(res=>{
+      var url = res.data.url;
+      img.src = url
+    })
+  }
+</script>
+</html>

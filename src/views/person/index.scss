@@ -1,7 +1,8 @@
 
 .person{
    .top{
-     background: slateblue;padding-bottom: 20px;
+     background: slateblue;
+     //padding-bottom: 20px;
      .login{
        width: 100%;
        color: white;
@@ -38,6 +39,10 @@
          }
        }
      }
+     .usermsg{
+       flex-direction: row-reverse;
+       justify-content: flex-end;
+     }
      .des{
        display: flex;
        justify-content: space-between;
@@ -55,15 +60,19 @@
        }
      }
    }
+  .vvv{
+    background: #fff;
+  }
   .bottom{
+    background: #fff;
     div{
-      border-bottom: 1px solid #e0e0e0;
     }
     .xiugai{
       margin-top: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
       .aaa{
         display: flex;
         align-items: center;
@@ -91,6 +100,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
       .aaa{
         display: flex;
         align-items: center;
@@ -118,6 +128,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
       .aaa{
         display: flex;
         align-items: center;

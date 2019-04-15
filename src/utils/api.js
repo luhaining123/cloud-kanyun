@@ -3,6 +3,12 @@ export default {
   getContent:'/category/books',
   getBooks:'/book/',
   getTitle:'/titles/',
-  getArticle:'/article/'
+  getArticle:'/article/',
+  sendCode:'/phoneValidator',
+  register:'/register',
+  login:'/login_html',
+  user:'/user',
+  changeAvatar:'/user',
+  changeUser:'/user',
 
 }

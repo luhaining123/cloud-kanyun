@@ -9,9 +9,11 @@ import '@/globalCss/px-rem.scss'
 import  'amfe-flexible/index'
 import {fetch} from '@/utils/index'
 import api from '@/utils/api'
+import store from './store'
 // import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
 // Vue.use(MintUI)
+import '@/iconfont/iconfont.css'
 Vue.config.productionTip = false
 Vue.prototype.$axios = fetch
 Vue.prototype.$api = api
@@ -20,6 +22,7 @@ Vue.prototype.$api = api
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

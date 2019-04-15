@@ -5,7 +5,7 @@
         <i class="iconfont icon-shouye" slot="icon"></i>
         首页
       </TabItem>
-      <TabItem id="history">
+      <TabItem id="learn">
         <i class="iconfont icon-xuexi" slot="icon"></i>
         我的学习
       </TabItem>

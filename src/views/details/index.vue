@@ -88,6 +88,7 @@
   @import "../../globalCss/px-rem";
   .container{
     padding: 10px;
+    margin-top: 40px;
     .con-top{
       display: flex;
       .book-img{
